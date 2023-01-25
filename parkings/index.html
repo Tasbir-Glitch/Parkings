@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PARKINGS - 220 Labrosse Ave</title>
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo">Logo</div>
+    <div class="smart-search">
+      <form>
+        <div class="search-input-div">
+          <div class="search-icon"><i class="far fa-search"></i></div>
+          <input class="search-input" type="text" placeholder="Search here...">
+          <button class="input-clear-btn" type="reset"><i class="fad fa-times-circle"></i></i></button>
+        </div>
+        <div class="search-dropdown">
+          <div class="search-dropdown-inner">
+            <div class="search-result">
+              <div class="search-icon"><i class="far fa-search"></i></div> Amazon
+            </div>
+            <div class="search-result">
+              <div class="search-icon"><i class="far fa-search"></i></div> Daraz
+            </div>
+            <div class="search-result">
+              <div class="search-icon"><i class="far fa-search"></i></div> DXB Service
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <ul class="navbar-buttons-area">
+      <li><a href="#" class="navbar-button"><i class="fal fa-user-circle"></i> <span>Contact</span></a></li>
+      <li><a href="#" class="navbar-button"><i class="fal fa-cog"></i> <span>Settings</span></a></li>
+      <li><a href="#" class="navbar-button"><i class="fal fa-table"></i> <span>Table</span></a></li>
+      <li><a href="#" class="navbar-button"><i class="fal fa-print"></i> <span>Print</span></a></li>
+      <li><a href="#" class="navbar-button"><i class="fal fa-sign-out"></i> <span>Logout</span></a></li>
+    </ul>
+    <button class="hamburger-menu">
+      <div class="hamburger-menu-inner">
+        <span></span>
+        <span class=""></span>
+        <span></span>
+      </div>
+    </button>
+  </div>
+  <div class="sidebar">
+    <div class="sidebar-inner">
+      <ul class="navbar-buttons-area">
+        <li><a href="#" class="navbar-button"><i class="fal fa-user-circle"></i> <span>Contact</span></a></li>
+        <li><a href="#" class="navbar-button"><i class="fal fa-cog"></i> <span>Settings</span></a></li>
+        <li><a href="#" class="navbar-button"><i class="fal fa-table"></i> <span>Table</span></a></li>
+        <li><a href="#" class="navbar-button"><i class="fal fa-print"></i> <span>Print</span></a></li>
+        <li><a href="#" class="navbar-button"><i class="fal fa-sign-out"></i> <span>Logout</span></a></li>
+      </ul>
+    </div>
+    <button class="sidebar-close-btn"><i class="fal fa-times"></i></button>
+  </div>
+  <div class="body-overlay"></div>
+  <div id="app" class="main">
+    <div class="map-bar">
+      <!-- <div class="panzoom-navigation">
+        <input class="zoomRange" type="range" min="0.1" max="30" step="0.1" value="0">
+        <button class="zoomIn-btn">+</button>
+        <button class="reset-btn">Reset</button>
+        <button class="zoomOut-btn">-</button>
+      </div> -->
+      <div class="parking-map-area zoom-area">
+        <div class="parking-space-map zoom-wrapper">
+          <div id="panzoom-element" class="map-bg">
+            <div class="parking-map-inner">
+              <div class="mapShape-block shape-short">
+                <div class="short-shape-inner">
+                  <div class="office">
+                    <div class="office-block-top office-block">
+                      <div class="office-room-top-inner office-room-inner">
+                        <div class="office-room-block office-room-block-left">
+                          <div class="office-room office-room-rented">Amazon</div>
+                          <div class="office-room">Room 2</div>
+                          <div class="office-room">Room 3</div>
+                        </div>
+                        <div class="office-room-block office-room-block-right">
+                          <div class="office-room">Room 4</div>
+                          <div class="office-room">Room 5</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="office-block-bottom office-block">
+                      <div class="office-room-bottom-inner office-room-inner">
+                        <div class="office-room-block office-room-block-left">
+                          <div class="office-room">Room 6</div>
+                        </div>
+                        <div class="office-room-block office-room-block-right">
+                          <div class="office-room office-room-rented">
+                            Aliexpress
+                            <div class="room-separator"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="garage-area">
+                    <div class="garage">
+                      <div class="garage-slot slot1">Slot 1</div>
+                      <div class="garage-slot slot2">Slot 2</div>
+                      <div class="garage-slot slot3">Slot 3</div>
+                      <div class="garage-slot slot4">Slot 4</div>
+                      <div class="garage-slot slot1">Slot 5</div>
+                      <div class="garage-slot slot2">Slot 6</div>
+                      <div class="garage-slot slot3">Slot 7</div>
+                      <div class="garage-slot slot4">Slot 8</div>
+                      <div class="garage-slot slot4">Slot 9</div>
+                      <div class="garage-slot slot4">Slot 10</div>
+                      <div class="garage-slot slot4">Slot 10</div>
+                      <div class="garage-slot slot4">Slot 12</div>
+                    </div>
+                    <div class="short-shape-garage-left">
+                      <div class="parking-lot-area">
+                        <div class="parking-lot-block">
+                          <div class="parking-lot parking-lot-horizontal gray1">
+                            <div class="status"><span class="rent-name">Amazon truck</span></div><span
+                              class="lot-number">161</span>
+                          </div>
+                          <div class="parking-lot parking-lot-horizontal gray1">
+                            <div class="status"><span class="rent-name">Daraz truck</span></div><span
+                              class="lot-number">161</span>
+                          </div>
+                          <div class="parking-lot parking-lot-horizontal gray1">
+                            <div class="status"><span class="rent-name">Daraz truck</span></div><span
+                              class="lot-number">161</span>
+                          </div>
+                          <div class="parking-lot parking-lot-horizontal gray1">
+                            <div class="status"><span class="rent-name">Daraz truck</span></div><span
+                              class="lot-number">161</span>
+                          </div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="short-shape-garage-bottom">
+                      <div class="parking-lot-area">
+                        <div class="parking-lot-block">
+                          <div class="parking-lot parking-lot-vertical gray1">
+                            <div class="status"><span class="rent-name">Daraz truck</span></div><span
+                              class="lot-number">161</span>
+                          </div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                          <div class="parking-lot"><span class="status"></span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="short-shape-top-left">
+                    <div class="parking-lot-area">
+                      <div class="parking-lot-block">
+                        <div class="parking-lot parking-lot-horizontal gray1">
+                          <div class="status"><span class="rent-name">Amazon truck</span></div><span
+                            class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal gray1">
+                          <div class="status"><span class="rent-name">Amazon truck</span></div><span
+                            class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal gray1">
+                          <div class="status"><span class="rent-name">Amazon truck</span></div><span
+                            class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal gray1">
+                          <div class="status"><span class="rent-name">Amazon truck</span></div><span
+                            class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="short-shape-bottom-left">
+                    <div class="parking-lot-area">
+                      <div class="parking-lot-block">
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="short-shape-bottom">
+                    <div class="parking-lot-area">
+                      <div class="parking-lot-block">
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="short-shape-bottom-right">
+                    <div class="parking-lot-area">
+                      <div class="parking-lot-block">
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="short-shape-exit-lots">
+                    <div class="parking-lot-area">
+                      <div class="parking-lot-block">
+                        <div class="parking-lot parking-lot-horizontal gray2">
+                          <div class="status"><span class="rent-name">Amazon truck</span></div><span
+                            class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal gray2">
+                          <div class="status"><span class="rent-name">Amazon truck</span></div><span
+                            class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="short-shape-top-left-corner"></div>
+                  <div class="short-shape-bottom-left-corner"></div>
+                  <div class="short-shape-top-right-corner"></div>
+                </div>
+              </div>
+              <div class="mapShape-block shape-long">
+                <div class="shape-long-inner">
+                  <div class="parking-lot-area">
+                    <div class="parking-lot-block top-block">
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">161</span>
+                      </div>
+                    </div>
+                    <div class="parking-lot-block middle-block">
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                      <div class="parking-lot parking-lot-vertical">
+                        <span class="lot-number">196</span>
+                      </div>
+                    </div>
+                    <div class="parking-lot-block bottom-block">
+                      <div class="b-block-wrapper">
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="long-shape-right">
+                    <div class="parking-lot-area">
+                      <div class="parking-lot-block">
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="gate"></div>
+                  <div class="gate-gurad"></div>
+                  <div class="long-shape-top-left-grass"></div>
+                  <div class="long-shape-top-left">
+                    <div class="parking-lot-area">
+                      <div class="parking-lot-block">
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="long-shape-middle-left">
+                    <div class="parking-lot-area">
+                      <div class="parking-lot-block">
+                        <div class="parking-lot parking-lot-vertical gray1 odd-lot">
+                          <div class="status"><span class="rent-name">Amazon truck</span></div><span
+                            class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical odd-lot">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical gray2">
+                          <div class="status"><span class="rent-name">Daraz truck</span></div><span
+                            class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical gray1">
+                          <div class="status"><span class="rent-name">Amazon truck</span></div><span
+                            class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-vertical">
+                          <span class="lot-number">161</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="long-shape-middle-left_sub-right">
+                    <div class="parking-lot-area">
+                      <div class="parking-lot-block">
+                        <div class="parking-lot parking-lot-horizontal gray1">
+                          <div class="status"><span class="rent-name">Amazon truck</span></div><span
+                            class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal gray1">
+                          <div class="status"><span class="rent-name">Amazon truck</span></div><span
+                            class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="long-shape-exit-lots">
+                    <div class="parking-lot-area">
+                      <div class="parking-lot-block">
+                        <div class="parking-lot parking-lot-horizontal gray1">
+                          <div class="status"><span class="rent-name">Amazon truck</span></div><span
+                            class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal gray1">
+                          <div class="status"><span class="rent-name">Amazon truck</span></div><span
+                            class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal gray2">
+                          <div class="status"><span class="rent-name">Amazon truck</span></div><span
+                            class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal">
+                          <span class="lot-number">161</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="long-shape-middle_sub-left">
+                    <div class="parking-lot-area">
+                      <div class="parking-lot-block">
+                        <div class="parking-lot parking-lot-horizontal gray1">
+                          <div class="status"><span class="rent-name">Amazon truck</span></div><span
+                            class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot parking-lot-horizontal gray1">
+                          <div class="status"><span class="rent-name">Amazon truck</span></div><span
+                            class="lot-number">161</span>
+                        </div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="shape-border"></div>
+                <div class="long-shape-left-corner"></div>
+                <div class="long-shape-right-empty"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="resize-icon"><i class="fal fa-arrow-right"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/panzoom.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

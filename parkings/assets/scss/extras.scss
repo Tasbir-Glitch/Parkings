@@ -1,0 +1,53 @@
+
+.resizable-x,
+.resizable-y {
+  display: flex;
+  overflow: hidden;
+}
+
+.resizable-x {
+  height: 100%;
+}
+
+.resizable-y {
+  min-width: 22%;
+}
+
+.resizer-x,
+.resizer-y {
+  position: relative;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resizer-x {
+  z-index: 2;
+  cursor: col-resize;
+}
+
+.resizer-x::before {
+  content: "";
+  width: 4px;
+  height: 25px;
+  margin: 2px;
+  background: #98adc2;
+  border-radius: 5px;
+}
+
+.resizer-y {
+  z-index: 1;
+  cursor: row-resize;
+  flex-direction: column;
+}
+
+.resizer-y::before,
+.resizer-y::after {
+  content: "";
+  width: 3px;
+  height: 35px;
+  margin: 2px;
+  background: #98adc2;
+  border-radius: 5px;
+}

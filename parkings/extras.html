@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PARKINGS - 220 Labrosse Ave</title>
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <div id="app" class="main">
+    <div class="resizable-x">
+      <div class="map-bar" style="flex: 50%;">
+        <div class="parking-map-area">
+          <div class="parking-space-map">
+            <h1 class="map-title">Scroll to zoom</h1>
+            <div id="zoom" class="parking-map-inner">
+              <!-- <div class="top-space"></div> -->
+              <div class="mapShape-block shape-short">
+                <div class="garage-area">
+                  <div class="garage"><i class="fas fa-garage"></i></div>
+                </div>
+              </div>
+              <div class="mapShape-block shape-long">
+                <div class="shape-long-inner">
+                  <div class="parking-lot-area">
+                    <div class="parking-lot-wrapper top-block">
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                    </div>
+                    <div class="parking-lot-wrapper middle-block">
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                    </div>
+                    <div class="parking-lot-wrapper bottom-block">
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                      <div class="parking-lot"><span class="status"></span></div>
+                    </div>
+                  </div>
+                  <div class="long-shape-right">
+                    <div class="white-space"></div>
+                    <div class="parking-lot-area">
+                      <div class="parking-lot-wrapper">
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                        <div class="parking-lot"><span class="status"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="resize-icon"><i class="fal fa-arrow-right"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="resizer-x"></div>
+    <div class="resizable-y">
+      <div class="details-bar" style="flex: 50%;"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // resize
+(function () {
+  "use strict";
+
+  // horizontal direction
+  (function resizableX() {
+    const resizer = document.querySelector(".resizer-x");
+    resizer.addEventListener("mousedown", onmousedown);
+    resizer.addEventListener("touchstart", ontouchstart);
+
+    // for mobile
+    function ontouchstart(e) {
+      e.preventDefault();
+      resizer.addEventListener("touchmove", ontouchmove);
+      resizer.addEventListener("touchend", ontouchend);
+    }
+    function ontouchmove(e) {
+      e.preventDefault();
+      const clientX = e.touches[0].clientX;
+      const deltaX = clientX - (resizer._clientX || clientX);
+      resizer._clientX = clientX;
+      const l = resizer.previousElementSibling;
+      const r = resizer.nextElementSibling;
+      // LEFT
+      if (deltaX < 0) {
+        const w = Math.round(parseInt(getComputedStyle(l).width) + deltaX);
+        l.style.flex = `0 ${w < 10 ? 0 : w}px`;
+        r.style.flex = "1 0";
+      }
+      // RIGHT
+      if (deltaX > 0) {
+        const w = Math.round(parseInt(getComputedStyle(r).width) - deltaX);
+        r.style.flex = `0 ${w < 10 ? 0 : w}px`;
+        l.style.flex = "1 0";
+      }
+    }
+    function ontouchend(e) {
+      e.preventDefault();
+      resizer.removeEventListener("touchmove", ontouchmove);
+      resizer.removeEventListener("touchend", ontouchend);
+      delete e._clientX;
+    }
+
+    // for desktop
+    function onmousedown(e) {
+      e.preventDefault();
+      document.addEventListener("mousemove", onmousemove);
+      document.addEventListener("mouseup", onmouseup);
+    }
+    function onmousemove(e) {
+      e.preventDefault();
+      const clientX = e.clientX;
+      const deltaX = clientX - (resizer._clientX || clientX);
+      resizer._clientX = clientX;
+      const l = resizer.previousElementSibling;
+      const r = resizer.nextElementSibling;
+      // LEFT
+      if (deltaX < 0) {
+        const w = Math.round(parseInt(getComputedStyle(l).width) + deltaX);
+        l.style.flex = `0 ${w < 10 ? 0 : w}px`;
+        r.style.flex = "1 0";
+      }
+      // RIGHT
+      if (deltaX > 0) {
+        const w = Math.round(parseInt(getComputedStyle(r).width) - deltaX);
+        r.style.flex = `0 ${w < 10 ? 0 : w}px`;
+        l.style.flex = "1 0";
+      }
+    }
+    function onmouseup(e) {
+      e.preventDefault();
+      document.removeEventListener("mousemove", onmousemove);
+      document.removeEventListener("mouseup", onmouseup);
+      delete e._clientX;
+    }
+  })();
+})();
+
+  </script>
+</body>
+
+</html>
